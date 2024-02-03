@@ -89,7 +89,7 @@ def bubble_sort(height_list, time_interval):
 def graph(j, height_list, time_interval):
     """
     Description:          This graphs the function and is displayed
-    each time it is called.
+                          each time it is called.
 
     :param j:             Choose to highlight blue which element.
     :param height_list:   A list of the y values.

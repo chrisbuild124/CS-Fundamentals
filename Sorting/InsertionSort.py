@@ -87,6 +87,9 @@ def insertion_sort(height_list, time_interval):
                 buffer = height_list[j]
                 height_list[j] = height_list[j-1]
                 height_list[j-1] = buffer
+            else:
+                graph(-2-j, height_list, time_interval)
+                break
             graph(j, height_list, time_interval)
         first_bar = i+3
 
@@ -94,7 +97,7 @@ def insertion_sort(height_list, time_interval):
 def graph(j, height_list, time_interval):
     """
     Description:          This graphs the function and is displayed
-    each time it is called.
+                          each time it is called.
 
     :param j:             Choose to highlight blue which element.
     :param height_list:   A list of the y values.
@@ -106,7 +109,10 @@ def graph(j, height_list, time_interval):
     x_coordinates = list(range(len(height_list)))
     plt.clf()
     # Must be -1 since it skips the index 1 term.
-    if j == -1:
+    if j < -1:
+        bar_colors[-1*j - 2] = '#ed2939'
+        time_interval = time_interval + .5
+    elif j == -1:
         bar_colors[0] = '#40e0d0'
     elif j == len(height_list):
         bar_colors[j - 1] = '#40e0d0'
