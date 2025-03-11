@@ -19,6 +19,7 @@ def input_bubble_sort():
     params:      Void.
     :returns:    The number of different numbers to sort.
     """
+    "test"
 
 
 if __name__ == '__main__':
