@@ -35,18 +35,21 @@ def input_bubble_sort():
             pass
         except ValueError:
             pass
-        if bar_number < 1 or bar_number > 100 or not isinstance(bar_number, int):
+        if bar_number < 1 or bar_number > 100\
+              or not isinstance(bar_number, int):
             print("Must be an integer between 1-50 inclusive. Try again.")
 
     time_interval = -1
-    while time_interval < 0.25 or time_interval > 5 or not isinstance(time_interval, float):
+    while time_interval < 0.25 or time_interval > 5\
+              or not isinstance(time_interval, float):
         try:
             time_interval = float(input("Time between iterations: "))
         except TypeError:
             pass
         except ValueError:
             pass
-        if time_interval < 0.25 or time_interval > 5 or not isinstance(time_interval, float):
+        if time_interval < 0.25 or time_interval > 5\
+              or not isinstance(time_interval, float):
             print("Must be a float between 0.25-5 inclusive. Try again.")
     return bar_number, time_interval
 
@@ -54,7 +57,8 @@ def input_bubble_sort():
 # Bubble Sort Loop
 def generate_random_list(length):
     """
-    Description: This generates a random list of numbers with a length of length.
+    Description: This generates a random list of numbers with a length of 
+    length.
 
     :param       length - An integer for how many numbers to randomize.
 
@@ -105,7 +109,8 @@ def graph(j, height_list, time_interval):
         bar_colors[0] = '#40e0d0'
     else:
         bar_colors[j], bar_colors[j+1] = '#8a2be2', '#40e0d0'
-    # Plots the chart. Removes x/y ticks, can override the previous chart, and pauses.
+    # Plots the chart. Removes x/y ticks, can override the previous chart, 
+    # and pauses.
     plt.bar(x_coordinates, height_list, color=bar_colors)
     plt.title('Bubble Sort Visualization by @chrisbuild124')
     plt.xticks([])
