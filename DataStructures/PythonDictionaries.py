@@ -1,6 +1,6 @@
 # @chrisbuild124
-# These are Python built in data Structures and notes.
-# This includes: Dictionary, Sets, Lists, and Tuples
+# These are some Python built in data Structures and notes.
+# This includes: Dictionary
 # --------------------------------------Description--------------------------------------
 
 import collections
