@@ -1,6 +1,10 @@
 # This is bucket sort used for a leetcode problem.
 # Leetcode: https://leetcode.com/problems/top-k-frequent-elements/ 
 
+# KEY INFORMATION:
+# The test cases are generated such that the answer is always unique.
+# So we do not have to sort the lists generated, but if there were more than one answer, we would. 
+
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         # Make a dictionary:
