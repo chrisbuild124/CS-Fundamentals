@@ -5,7 +5,7 @@ Welcome to my Computer Science Fundamentals repository! This is a curated collec
 I am going through neetcode 150's currated list, and redoing CodePath's TIP 103x problems since March 2025.
 
 ### Progress on Neetcode 150s map:
-<img width="1902" height="867" alt="image" src="https://github.com/user-attachments/assets/1b35295b-0f89-4c58-a425-c18edda8eea6" />
+<img width="1572" height="832" alt="image" src="https://github.com/user-attachments/assets/06b5402e-62ba-4c68-b307-547e306aad8d" />
 
 ### Progress on doing a second pass on CodePath's TIP 103x Class:
 <img width="1017" height="786" alt="image" src="https://github.com/user-attachments/assets/fc8d587a-c457-4521-97ee-213a002ea618" />
