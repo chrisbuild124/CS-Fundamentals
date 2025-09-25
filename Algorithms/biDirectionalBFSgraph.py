@@ -1,4 +1,4 @@
-# Bidirecitonal BFS search for shortest path
+# biDirectional BFS search for shortest path
 # Leetcode: https://leetcode.com/problems/word-ladder/
 
 # The idea here is to create two queues for a BFS search to get the shortest path
