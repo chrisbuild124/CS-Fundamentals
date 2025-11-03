@@ -5,6 +5,8 @@
 # Note: I believe djikstra's would be faster but this works with negative edges (this problem doesn't have negative edges though)
 # edge-based DP rather than path-based or state-based DP 
 
+# Note: This is an iterative solution, djikstra's would be a greedy solution
+
 class Solution:
     def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
         dp = [float('inf')]*n
