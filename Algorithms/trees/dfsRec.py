@@ -2,6 +2,7 @@
 # Link: https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
 
 # This is an implimentation of dfs using recursion on the maximum depth of binary tree problem.
+# NOTE: DFS can be done using pre order, in order, or post order traversal 
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         # try dfs
