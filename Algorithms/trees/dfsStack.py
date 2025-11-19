@@ -3,6 +3,7 @@
 
 # This is an implimentation of dfs using a stack on the maximum depth of binary tree problem.
 # NOTE: This solution was taken from neetcode's website
+# NOTE: DFS can be done using pre order, in order, or post order traversal 
 
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
