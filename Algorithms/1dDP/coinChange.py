@@ -2,7 +2,7 @@
 # Link: https://leetcode.com/problems/coin-change/description/
 
 # Instead of using indexes as the cache, it uses the amount left (not intuitive at first)
-# note this is the backtracking solution 
+# note this is the bottom up solution 
 
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
