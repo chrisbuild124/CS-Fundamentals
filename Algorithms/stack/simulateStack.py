@@ -1,0 +1,18 @@
+# Validate Stack Sequences
+# Link: https://leetcode.com/problems/validate-stack-sequences/
+
+# The trick here is to just simulate a stack pushing and popping
+# which is a fundamental pattern. 
+
+class Solution:
+    def validateStackSequences(self, pushed: List[int], popped: List[int]) -> bool:
+        stack = []
+        j = 0
+
+        for i in range(len(pushed)):
+            stack.append(pushed[i])
+            while stack and stack[-1] == popped[j]:
+                stack.pop()
+                j += 1
+        
+        return j == len(pushed)
