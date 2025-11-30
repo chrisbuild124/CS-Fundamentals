@@ -1,5 +1,5 @@
 # Kth Largest Element in an Array
-# runttime: nlogn is average but n^2 is worst
+# runttime: n is average but n^2 is worst
 # leetcode: https://leetcode.com/problems/kth-largest-element-in-an-array/
 class Solution:
     def findKthLargest(self, nums: List[int], k: int) -> int:
