@@ -1,7 +1,7 @@
-# CS-Fundamentals
-Welcome to my Computer Science Fundamentals repository! This is a curated collection of essential concepts, algorithms, and data structures that form the backbone of technical interviews, academic study, and real-world software engineering.
+# Data Structures and Algorithms Repository 
+Welcome to my Computer Science data structure and algortihms repository. This is a curated collection of essential concepts, algorithms, and data structures that form the backbone of technical interviews, academic study, and real-world software engineering.
 
-## How this is working
+## How this repository is structured
 I am going through neetcode 150's currated list, and redoing CodePath's TIP 103x problems since March 2025.
 
 ### Progress on Neetcode 150s map:
