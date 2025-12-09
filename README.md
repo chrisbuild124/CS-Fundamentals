@@ -12,4 +12,4 @@ I am going through neetcode 150's currated list, and redoing CodePath's TIP 103x
 
 <br>
 <br>
-Feel free to reach out to me with how youre learning DSA! 
+Feel free to reach out to me with how youre learning DSA.
