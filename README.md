@@ -1,5 +1,5 @@
-# Data Structures and Algorithms Repository 
-Welcome to my Computer Science data structure and algortihms repository. This is a curated collection of essential concepts, algorithms, and data structures that form the backbone of technical interviews, academic study, and real-world software engineering.
+# Algorithms and Data Structures Repository 
+Welcome to my Computer Science algorithms and data structures repository. This is a curated collection of essential concepts, algorithms, and data structures that form the backbone of technical interviews, academic study, and real-world software engineering.
 
 ## How this repository is structured
 I am going through neetcode 150's currated list, and redoing CodePath's TIP 103x problems since March 2025.
