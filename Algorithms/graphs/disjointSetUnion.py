@@ -3,6 +3,8 @@
 # If the value's parent has a larger size, then that smaller tree is mapped into larger (memory efficient). 
 # Leetcode https://leetcode.com/problems/max-area-of-island/editorial/
 
+# visit set is not needed since if pp0 == pp1, it would have been visited already and it's O(1) runttime anyway. 
+
 class Dsu:
     def __init__(self, n):
         self.parents = [i for i in range(n+1)]
