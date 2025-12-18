@@ -12,7 +12,7 @@
 
 # Link: https://leetcode.com/problems/reconstruct-itinerary
 
-# Since this needs to be in lexigraphical order, after sorting, each dfs call is 
+# Since this needs to be in lexigraphical order, after sorting, each dfs call is selecting the correct node to explore. 
 class Solution:
     def findItinerary(self, tickets: List[List[str]]) -> List[str]:
         adj = defaultdict(list)
