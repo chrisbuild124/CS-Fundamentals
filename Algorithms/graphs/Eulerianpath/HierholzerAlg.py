@@ -3,6 +3,9 @@
 # there are many solutions but the solution desired is ordered, so the algorithm
 # can search directly to find the correct answer. 
 
+# There are really no branches in this problem, it's more of a special graph that
+# will always give a solution. 
+
 # Link: https://leetcode.com/problems/reconstruct-itinerary
 
 # Since this needs to be in lexigraphical order, after sorting, each dfs call is 
