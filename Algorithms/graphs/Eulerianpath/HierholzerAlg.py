@@ -5,12 +5,10 @@
 
 # There are really no branches in this problem, it's more of a special graph that
 # will always give a solution. 
-# 
-# An Eulerian circuit (path that starts and ends at the same node) exists if and only if:
 
 # An Eulerian path (can start and end at different nodes) exists if and only if:
-# The graph is connected.
-# Exactly two vertices have odd degree (for undirected), or exactly one vertex has out-degree = in-degree + 1 and one has in-degree = out-degree + 1 (for directed).
+    # The graph is connected.
+    # Exactly two vertices have odd degree (for undirected), or exactly one vertex has out-degree = in-degree + 1 and one has in-degree = out-degree + 1 (for directed).
 
 # Link: https://leetcode.com/problems/reconstruct-itinerary
 
