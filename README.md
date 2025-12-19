@@ -2,14 +2,10 @@
 Welcome to my Computer Science algorithms and data structures repository. This is a curated collection of essential concepts, algorithms, and data structures that form the backbone of technical interviews, academic study, and real-world software engineering.
 
 ## How this repository is structured
-I am going through neetcode 150's currated list, and redoing CodePath's TIP 103x problems since March 2025.
+I am going through neetcode 150's currated list.
 
 ### Progress on Neetcode 150s map:
-<img width="3422" height="1798" alt="image" src="https://github.com/user-attachments/assets/7f6b33e5-ad39-452f-a9ae-6f6142ac3909" />
+<img width="3430" height="1650" alt="image" src="https://github.com/user-attachments/assets/6ee34c73-cfe2-45f7-ab21-d515b39e9152" />
 
-### Progress on doing a second pass on CodePath's TIP 103x Class:
-<img width="1691" height="680" alt="image" src="https://github.com/user-attachments/assets/890c207a-d2fb-4199-9296-d19fbfc1f56b" />
 
-<br>
-<br>
-Feel free to reach out to me with how youre learning DSA.
+Once I get to 150, I will work on the 250 map (slower pace, of course). 
