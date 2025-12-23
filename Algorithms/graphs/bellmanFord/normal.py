@@ -8,6 +8,8 @@
 # Note: This is an iterative solution, djikstra's would be a greedy solution
 # Bellman-Ford can’t replace BFS for those tasks because it doesn’t give traversal order, just minimum costs.
 
+# Relax each edge: dp[d] = p
+
 class Solution:
     def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
         dp = [float('inf')]*n
