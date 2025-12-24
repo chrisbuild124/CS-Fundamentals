@@ -1,27 +1,27 @@
-# Network Delay Time
-# Bellman Ford Optimized
-# Only optimize edges that are improved. 
+# Find cheapeset flights within k stops
+# Link: https://leetcode.com/problems/cheapest-flights-within-k-stops/description/
 
-# NOTE: Solution was taken directly from neetcode 
+# NOTE: Uses a q to bfs and a cities array to find if that path is the cheapest so far 
 # O(E + V) average, O(E*V) worst
 class Solution:
-    def networkDelayTime(self, times, n, k):
-        adj = defaultdict(list)
-        for u, v, w in times:
-            adj[u].append((v, w))
+    def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
+        # Bellman Ford Optimized, no neg cycles needed
 
-        dist = {node: float("inf") for node in range(1, n + 1)}
-        q = deque([(k, 0)])
-        dist[k] = 0
+        cities = [float('inf')]*n
+        cities[src] = 0
+        adj = defaultdict(list)
+        for s, e, p in flights:
+            adj[s].append((e, p))
+        q = deque()
+        q.append((src, 0, 0)) # Start, count, total
 
         while q:
-            node, time = q.popleft()
-            if dist[node] < time:
+            start, count, total = q.popleft()
+            if count > k:
                 continue
-            for nei, w in adj[node]:
-                if time + w < dist[nei]:
-                    dist[nei] = time + w
-                    q.append((nei, time + w))
+            for nei, p in adj[start]:
+                if total + p < cities[nei]:
+                    cities[nei] = total + p
+                    q.append((nei, count + 1, total + p))
 
-        res = max(dist.values())
-        return res if res < float('inf') else -1
+        return -1 if cities[dst] == float('inf') else cities[dst]
