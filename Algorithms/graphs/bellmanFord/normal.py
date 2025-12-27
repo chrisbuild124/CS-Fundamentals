@@ -4,6 +4,9 @@
 # Network Delay Time
 # Runttime: O(E*V), Space: O(E)
 
+# Run V−1 relaxations
+# One more pass → if anything improves → negative cycle exists
+
 class Solution:
     def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
         # Dijkstra: bfs: V*logE, Space: E
