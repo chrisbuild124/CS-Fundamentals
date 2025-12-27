@@ -1,27 +1,22 @@
-# Bellman Ford's algorithm
-# Used to find shortest distance from one node to all other nodes in both negative and positive weighted graphs
+# Bellman Ford Algorithm
+# Link: https://leetcode.com/problems/network-delay-time/
 
-# leetcode: https://leetcode.com/problems/cheapest-flights-within-k-stops/?envType=problem-list-v2&envId=9id9smj2
-# Note: I believe djikstra's would be faster but this works with negative edges (this problem doesn't have negative edges though)
-# edge-based DP rather than path-based or state-based DP 
-
-# Note: This is an iterative solution, djikstra's would be a greedy solution
-# Bellman-Ford can’t replace BFS for those tasks because it doesn’t give traversal order, just minimum costs.
-
-# Relax each edge: dp[d] = p
+# Network Delay Time
+# Runttime: O(E*V), Space: O(E)
 
 class Solution:
-    def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
-        dp = [float('inf')]*n
-        dp[src] = 0
+    def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
+        # Dijkstra: bfs: V*logE, Space: E
+            # Adj: Make: E, space: E + V
+        # Floyd Warshall: V^3 time, space: V
+        # Bellman-Ford classic: Time: V*E, space: V
+        # Bellman-Ford optimized: Average: (E + V), max: (E*V)
+        distances = [float('inf')] * n
+        distances[k - 1] = 0
         
-        for _ in range(k+1):
-            step = []
-            for s, d, p in flights:
-                if dp[s] != float('inf') and dp[s] + p < dp[d]:
-                    step.append((d, dp[s] + p))
-            for d, p in step:
-                if p < dp[d]:
-                    dp[d] = p
-                
-        return -1 if dp[dst] == float('inf') else dp[dst]
+        for i in range(n):
+            for s, e, p in times:
+                distances[e - 1] = min(distances[e - 1], distances[s - 1] + p)
+        return -1 if float('inf') in distances else max(distances)
+
+
