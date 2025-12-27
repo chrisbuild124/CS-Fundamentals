@@ -1,28 +1,29 @@
-# Find cheapeset flights within k stops
-# Link: https://leetcode.com/problems/cheapest-flights-within-k-stops/description/
+# Bellman Ford Algorithm
+# Link: https://leetcode.com/problems/network-delay-time/
 
-# NOTE: Uses a q to bfs and a cities array to find if that path is the cheapest so far 
-# NOTE: It relaxes the edges iside the "cities" array
-# O(E + V) average, O(E*V) worst
+# Network Delay Time
+# Runttime: average: O(E + V), worst: O(E*V), Space: O(E)
+
 class Solution:
-    def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
-        # Bellman Ford Optimized, no neg cycles needed
-
-        cities = [float('inf')]*n
-        cities[src] = 0
+    def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
+        # Dijkstra: bfs: V*logE, Space: E
+            # Adj: Make: E, space: E + V
+        # Floyd Warshall: V^3 time, space: V
+        # Bellman-Ford classic: Time: V*E, space: V
+        # Bellman-Ford optimized: Average: (E + V), max: (E*V)
         adj = defaultdict(list)
-        for s, e, p in flights:
+        for s, e, p in times:
             adj[s].append((e, p))
+        distances = [float('inf')] * n
+        distances[k - 1] = 0
         q = deque()
-        q.append((src, 0, 0)) # Start, count, total
-
+        q.append((0, k))
+        
         while q:
-            start, count, total = q.popleft()
-            if count > k:
-                continue
-            for nei, p in adj[start]:
-                if total + p < cities[nei]:
-                    cities[nei] = total + p
-                    q.append((nei, count + 1, total + p))
-
-        return -1 if cities[dst] == float('inf') else cities[dst]
+            total, node = q.popleft()
+            for nei, p in adj[node]:
+                if distances[node - 1] + p < distances[nei - 1]:
+                    q.append((total + p, nei))
+                    distances[nei - 1] = total + p
+        print(distances)
+        return -1 if float('inf') in distances else max(distances)
