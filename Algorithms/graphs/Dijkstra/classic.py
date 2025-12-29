@@ -11,6 +11,9 @@ class Solution:
         # Bellman-Ford classic: Time: V*E, space: V
         # Bellman-Ford optimized: Average: (E + V), max: (E*V)
 
+        # TLDR: Relaxes edges and uses a heap, but vertices can
+        # be visited multiple times. 
+
         adj = defaultdict(list)
         distances = [float('inf')]*n
         distances[k-1] = 0
