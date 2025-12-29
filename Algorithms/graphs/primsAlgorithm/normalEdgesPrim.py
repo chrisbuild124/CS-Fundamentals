@@ -1,7 +1,7 @@
 # Network delay time
 # Link: https://leetcode.com/problems/network-delay-time/
 
-# Time: V log E 
+# Time: V^2 log E, but V^2 = E so V^2 log V
 class Solution:
     def minCostConnectPoints(self, points: List[List[int]]) -> int:
         heap = [(0, 0)] # distance to point, point index
