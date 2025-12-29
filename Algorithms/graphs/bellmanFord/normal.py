@@ -17,7 +17,7 @@ class Solution:
         distances = [float('inf')] * n
         distances[k - 1] = 0
         
-        for i in range(n):
+        for i in range(n - 1):
             for s, e, p in times:
                 distances[e - 1] = min(distances[e - 1], distances[s - 1] + p)
         return -1 if float('inf') in distances else max(distances)
