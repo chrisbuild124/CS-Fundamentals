@@ -3,7 +3,9 @@
 
 # This is prim's but instead of using a heap, it uses an array. It's optimal
 # for graphs that are near complete (doesn't need to be complete, but closer
-# is needed). 
+# is needed). E -> V^2, so in this solution, it's just V^2
+
+
 class Solution:
     def minCostConnectPoints(self, points: List[List[int]]) -> int:
         INF = float('inf')
