@@ -5,14 +5,14 @@
 
 class Solution:
     def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
-        # Dijkstra: bfs: V*logE, Space: E
+        # Dijkstra: heap: E*logV, Space: V
             # Adj: Make: E, space: E + V
         # Floyd Warshall: V^3 time, space: V
         # Bellman-Ford classic: Time: V*E, space: V
         # Bellman-Ford optimized: Average: (E + V), max: (E*V)
 
         # TLDR: Relaxes edges and uses a heap, but vertices can
-        # be visited multiple times. 
+        # be visited multiple times. Same runttime: ~ E log V
 
         adj = defaultdict(list)
         distances = [float('inf')]*n
