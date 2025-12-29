@@ -6,31 +6,27 @@
 # is needed). 
 class Solution:
     def minCostConnectPoints(self, points: List[List[int]]) -> int:
-        # Try Prim's alg (E * logE)
-        # However, E = V^2 in this problem (dense graph, all nodes are connected)
-        # V^2 * logV^2 = 2V^2logV = V^2logV
-        # Doing an array of V^2 is < V^2logV
-
-        # If it was at most sparse, then E = V, and then V*logV < V^2logV, therefore, use
-        # the heap. 
-        res = 0
-        count = 1
-        visit = {0}
-        distances = [float('inf')]*len(points)
+        INF = float('inf')
+        N = len(points)
+        distances = [INF]*N
+        distances[0] = 0
+        mst = {0}
         next_node = 0
 
-        while count < len(points):
+        for _ in range(N):
             node = next_node
-            for j in range(len(points)):
-                dist = abs(points[node][0] - points[j][0]) + abs(points[node][1] - points[j][1])
-                if distances[j] > dist and j != node:
-                    distances[j] = dist
-            next_node, next_dist = -1, float('inf')
-            visit.add(node)
-            for i in range(len(points)): # Find cheapest available node edge to node
-                if i not in visit and distances[i] < next_dist:
-                    next_node, next_dist = i, distances[i]
-            res += next_dist
-            count += 1
+            x1, y1 = points[node][0], points[node][1]
+            for j in range(N):
+                if j in mst:
+                    continue
+                x2, y2 = points[j][0], points[j][1]
+                dist = abs(y2 - y1) + abs(x2 - x1)
+                distances[j] = min(distances[j], dist)
+            next_node, dist = -1, INF
+            for i in range(N):
+                if i not in mst and distances[i] < dist:
+                    next_node = i
+                    dist = distances[i]
+            mst.add(next_node)
 
-        return res
+        return sum(distances)
