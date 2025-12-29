@@ -10,6 +10,10 @@ class Solution:
         # Bellman-Ford classic: Time: V*E, space: V
         # Bellman-Ford optimized: Average: (E + V), max: (E*V)
 
+        # TLDR: Relaxes edges and uses a heap, and verticies
+        # cannot be visited multiple times. 
+        # Same runttime: ~ E log V
+
         adj = defaultdict(list)
         visit = set()
         heap = [(0, k)]
