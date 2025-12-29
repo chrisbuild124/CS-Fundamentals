@@ -2,6 +2,9 @@
 # It relies on an intermediate value (k) to continiously update
 # the shortest path between two nodes in a two by two matrix.
 
+# In general, not many ways to optimize and it is rarely used in application since
+# it is so slow and computes literally everything. 
+
 # Leetcode: https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/description/?envType=problem-list-v2&envId=9idenloe
 
 class Solution:
