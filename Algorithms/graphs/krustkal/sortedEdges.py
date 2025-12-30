@@ -29,6 +29,8 @@
 #
 #   -> Array-based Prim's is strictly better on dense graphs
 
+# Must be undirected, can have neg cycle
+
 
 class Dsu:
     def __init__(self, n):
