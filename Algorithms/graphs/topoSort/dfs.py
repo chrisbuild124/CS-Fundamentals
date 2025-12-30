@@ -8,7 +8,6 @@ class Solution:
         adj = defaultdict(list)
         for i in range(numCourses):
             adj[i] = []
-        q = deque()
         res = []
         visit = set()
         cycle = set()
