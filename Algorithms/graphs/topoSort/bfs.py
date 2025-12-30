@@ -5,25 +5,25 @@
 from collections import deque
 class Solution:
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
-        check = [0]*numCourses
-        adj = [[] for _ in range(numCourses)]
+        inorder = [0]*numCourses
+        adj = defaultdict(list)
         q = deque()
         res = []
 
-        for s, p in prerequisites:
-            check[s] += 1
-            adj[p].append(s)
-        
-        for i in range(numCourses):
-            if check[i] == 0:
-                q.append(i)
+        for b, a in prerequisites:
+            adj[a].append(b)
+            inorder[b] += 1
 
+        for i in range(numCourses):
+            if inorder[i] == 0:
+                q.append(i)
+        
         while q:
             node = q.popleft()
-            for pre in adj[node]:
-                check[pre] -= 1
-                if check[pre] == 0:
-                    q.append(pre)
             res.append(node)
+            for nei in adj[node]:
+                inorder[nei] -= 1
+                if inorder[nei] == 0:
+                    q.append(nei)
 
         return res if len(res) == numCourses else []
