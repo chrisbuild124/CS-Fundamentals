@@ -4,7 +4,7 @@
 
 class Solution:
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
-        # Try bfs
+        # Try dfs
         adj = defaultdict(list)
         for i in range(numCourses):
             adj[i] = []
