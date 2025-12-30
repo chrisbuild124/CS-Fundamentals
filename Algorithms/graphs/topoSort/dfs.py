@@ -4,33 +4,24 @@
 
 class Solution:
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
-        # Try dfs
-        adj = defaultdict(list)
-        for i in range(numCourses):
-            adj[i] = []
+        check = [0]*numCourses
+        adj = [[] for _ in range(numCourses)]
         res = []
-        visit = set()
-        cycle = set()
 
-        for e, s in prerequisites:
-            adj[e].append(s)
+        for s, p in prerequisites:
+            check[s] += 1
+            adj[p].append(s)
 
-        def dfs(i):
-            if i in visit:
-                return True
-            if i in cycle:
-                return False
-            cycle.add(i)
-            for nei in adj[i]:
-                if not dfs(nei):
-                    return False
-            cycle.remove(i)
-            visit.add(i)
-            res.append(i)
-            return True
-
+        def dfs(node):
+            res.append(node)
+            check[node] -= 1
+            for nei in adj[node]:
+                check[nei] -= 1
+                if check[nei] == 0:
+                    dfs(nei)
+        
         for i in range(numCourses):
-            if not dfs(i):
-                return []
+            if check[i] == 0:
+                dfs(i)
 
-        return res
+        return res if len(res) == numCourses else []
