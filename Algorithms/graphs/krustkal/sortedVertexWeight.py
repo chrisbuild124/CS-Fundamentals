@@ -3,6 +3,8 @@
 
 # This sorts based on each weight of the vertex. It is clever. 
 
+# Must be undirected, can have neg cycle
+
 class Dsu:
     def __init__(self, n):
         self.size = [1]*n
