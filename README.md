@@ -5,7 +5,7 @@ Welcome to my Computer Science algorithms and data structures repository. This i
 I am going through neetcode 150's currated list and Codepath's TIP 103x class 2nd pass. 
 
 ### Progress on Neetcode 150s map:
-<img width="3232" height="1716" alt="image" src="https://github.com/user-attachments/assets/6a03d249-639c-4667-82f7-2e6225bd34fd" />
+<img width="3402" height="1788" alt="image" src="https://github.com/user-attachments/assets/a5d1eb9c-056f-419d-a670-de3e36724055" />
 
 
 ### Progress on TIP 103x's class
