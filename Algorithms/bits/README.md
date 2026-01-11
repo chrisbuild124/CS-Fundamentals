@@ -26,5 +26,5 @@ n = n >> 1
 0x7FFFFFFF = 0b01111111111111111111111111111111
 
 - Convert an overflowed integer to signed <br/>
-- This will flip res bits by 1 and then take the inverse: res = ~(res ^ mask) 
+This will flip res bits by 1 and then take the inverse: res = ~(res ^ mask) 
   
