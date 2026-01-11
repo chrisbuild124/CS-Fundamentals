@@ -17,5 +17,7 @@ n = 1
 n = n << 1
 n = n >> 1
 
+# General
+
 - Binary bit representation <br/>
 0xFFFFFFFF = 0b11111111111111111111111111111111
