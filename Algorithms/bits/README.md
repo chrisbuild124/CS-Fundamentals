@@ -21,3 +21,6 @@ n = n >> 1
 
 - Binary bit representation <br/>
 0xFFFFFFFF = 0b11111111111111111111111111111111
+
+- Binary bit representation <br/>
+0x7FFFFFFF = 0b01111111111111111111111111111111
