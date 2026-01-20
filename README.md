@@ -3,6 +3,7 @@ Welcome to my Computer Science algorithms and data structures repository. This i
 
 ## How this repository is structured
 I am going through neetcode 150's currated list and Codepath's TIP 103x class 2nd pass. 
+Additionally, I will add more helpful algorithms that I see outside these lists. 
 
 ### Progress on Neetcode 150s map:
 <img width="3412" height="1796" alt="image" src="https://github.com/user-attachments/assets/290dd66c-64a2-4fd6-85d7-7d91b58b97a9" />
