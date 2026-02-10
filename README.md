@@ -1,14 +1,12 @@
 # Algorithms and Data Structures Repository 
-Welcome to my Computer Science algorithms and data structures repository. This is a collection of essential concepts, algorithms, and data structures that are essential for interviews and academic study. 
+Welcome to my Computer Science algorithms and data structures repository. This is a collection of essential concepts, algorithms, and data structures that are essential for interviews and real world algorithms. 
 
 ## How this repository is structured
 I am going through neetcode 250's currated list (150 list completed!) and Codepath's TIP 103x class 2nd pass. 
-Additionally, I will add more helpful algorithms that I see outside these lists. 
+Additionally, I will add more helpful algorithms that I see outside these lists (including system design). 
 
 ### Progress on Neetcode 250s map:
 <img width="3428" height="1802" alt="image" src="https://github.com/user-attachments/assets/43eb09ef-1fa2-4222-853b-29e0d439f43b" />
 
 ### Progress on TIP 103x's class
 <img width="2596" height="1580" alt="image" src="https://github.com/user-attachments/assets/21cf3d77-3228-407b-b929-5f62df88a8cb" />
-
-Once I get to 150, I will work on the 250 map (slower pace, of course). 
