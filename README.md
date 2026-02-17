@@ -1,4 +1,4 @@
-# Algorithms and Data Structures Repository 
+# Algorithms, Data Structures & Misc Repository 
 Welcome to my Computer Science algorithms and data structures repository. This is a collection of essential concepts, algorithms, and data structures that are essential for interviews and real world applications. 
 
 ## How this repository is structured
@@ -10,3 +10,6 @@ Additionally, I will add more helpful algorithms that I see outside these lists 
 
 ### Progress on TIP 103x's class
 <img width="2596" height="1580" alt="image" src="https://github.com/user-attachments/assets/21cf3d77-3228-407b-b929-5f62df88a8cb" />
+
+### All other folders
+Misc topics are added to this repository as well.
