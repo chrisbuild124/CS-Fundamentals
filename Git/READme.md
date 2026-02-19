@@ -27,6 +27,7 @@
 - `git clone <repo-url>` **Note:** rep-url is under “code” ending in .git
   - Most times, paste into IDE’s clone feature instead of using git clone `<repo-url>`
   - Pick a repository location to store `.git` and repo files locally on pc
+- - `git clone <repo-url> .` **Note:** puts files in current directory and doesn't create a file
 
 ### Clone fetch, upstream - *fetches latest commits from remote repo, no merge* **(LOCAL)**
 - `git remote -v` **Note:** Displays current remote repo url connections
