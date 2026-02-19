@@ -54,6 +54,12 @@
   - done on GitHub, logged as forked
   - Github knows `origin` of forked repo
 
+### Submodule - *create a direct import to a repository* **(LOCAL)**
+- `git submodule add <submodule-repo-url> <desired path>/<submodule-folder-name>`
+- `git submodule deinit -f <path>` *Note:* Deletes from .git configuration
+- `rm -rf .git/modules/<path>` *Note:* Deletes from .gitmodules
+- `git rm -f <path>` *Note:* Deletes from repository 
+
 ### Branches - *creating and switching to a branch* **(LOCAL)**
 - *Both* creating and switching to branches:
   - `git checkout -b <branch-name>`
