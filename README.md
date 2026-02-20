@@ -1,6 +1,6 @@
 # Algorithms, Data Structures & Misc Repository 
-Welcome to my Computer Science algorithms and data structures repository. 
-- This is a collection of essential concepts, algorithms, and data structures that are essential for interviews and real world applications.
+Welcome to my CS Fundamentals repository. 
+- This is a collection of Data Structures & Algorithms and misc topics. 
 - In the future, I am going to add system design and OOP patterns. 
 
 ## How this repository is structured
