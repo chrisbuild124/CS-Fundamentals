@@ -1,5 +1,7 @@
 # Algorithms, Data Structures & Misc Repository 
-Welcome to my Computer Science algorithms and data structures repository. This is a collection of essential concepts, algorithms, and data structures that are essential for interviews and real world applications. 
+Welcome to my Computer Science algorithms and data structures repository. 
+- This is a collection of essential concepts, algorithms, and data structures that are essential for interviews and real world applications.
+- In the future, I am going to add system design and OOP patterns. 
 
 ## How this repository is structured
 I am going through neetcode 250's currated list (150 list completed!) and Codepath's TIP 103x class 2nd pass. 
